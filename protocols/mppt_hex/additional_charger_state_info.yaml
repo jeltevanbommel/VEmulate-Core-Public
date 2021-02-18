@@ -1,0 +1,27 @@
+name: Additional charger state info
+key: 0xEDD4
+default: 0
+values:
+  - type: BitBuffer
+    values:
+      - type: IntChoice
+        bits: 1
+        choices: [0,1]
+      - type: IntChoice
+        bits: 1
+        choices: [0,1]
+      - type: IntFixed
+        bits: 2
+        value: 0
+      - type: IntChoice
+        bits: 1
+        choices: [0,1]
+      - type: IntChoice
+        bits: 1
+        choices: [0,1]
+      - type: IntChoice
+        bits: 1
+        choices: [0,1]
+      - type: IntFixed
+        bits: 1
+        value: 0

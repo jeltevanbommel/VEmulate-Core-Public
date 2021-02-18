@@ -1,0 +1,20 @@
+name: Timer event 1
+key: 0xEDA1
+default: 0
+writable: true
+values:
+  - type: BitBuffer
+    values:
+      - type: IntRange # Time offset
+        bits: 16
+        signed: true
+        min: 0x0000
+        max: 0xFFFF
+      - type: IntRange # Anchor point
+        bits: 8
+        min: 0x00
+        max: 0xFF
+      - type: IntRange # Dim action
+        bits: 8
+        min: 0
+        max: 100

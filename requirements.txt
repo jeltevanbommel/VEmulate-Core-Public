@@ -1,0 +1,5 @@
+-e .
+pyyaml
+colorlog
+pyserial
+observable

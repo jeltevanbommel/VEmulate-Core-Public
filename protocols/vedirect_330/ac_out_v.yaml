@@ -1,0 +1,16 @@
+name: AC output current
+key: AC_OUT_I
+scale: 0.1
+unit: A
+default: 0
+values:
+  - type: IntRange
+    min: 0
+    max: 500
+
+detailed_description: "Only on Phoenix Inverters"
+
+custom_gui_elements:
+  - type: range
+    min: 0
+    max: 500

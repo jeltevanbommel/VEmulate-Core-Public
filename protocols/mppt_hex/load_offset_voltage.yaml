@@ -1,0 +1,10 @@
+name: Load offset voltage
+key: 0xEDAC
+default: 0
+scale: 0.01
+unit: V
+values:
+  - type: IntRange
+    bits: 8
+    min: 0x00
+    max: 0xFF

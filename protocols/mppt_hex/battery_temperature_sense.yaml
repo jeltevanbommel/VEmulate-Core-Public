@@ -1,0 +1,12 @@
+name: Battery temperature sense
+key: 0x2003
+default: 0
+scale: 0.01
+unit: V
+writable: true
+values:
+  - type: IntRange
+    bits: 16
+    signed: true
+    min: 0x0000
+    max: 0xFFFF

@@ -1,0 +1,15 @@
+name: H4
+key: H4
+default: 0
+values:
+  - type: IntRange
+    min: -2147483648
+    max: 2147483647
+
+# description section for GUI
+detailed_description: "Number of charge cycles"
+
+custom_gui_elements:
+  - type: range
+    min: -2147483648
+    max: 2147483647

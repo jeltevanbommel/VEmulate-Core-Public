@@ -1,0 +1,18 @@
+name: Consumed Amp Hours
+key: CE
+unit: mAh
+default: '---'
+values:
+  - type: SelectRandom
+    values:
+      - type: StringFixed
+        value: '---'
+        amount: 1
+      - type: IntRange
+        min: 0
+        max: 10000
+        amount: 10
+
+
+detailed_description: "When the BMV is not synchronised, these statistics have no meaning, so '---' will be sent instead of a
+                        value."

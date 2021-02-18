@@ -1,0 +1,8 @@
+name: Remote Control Used
+key: 0x0202
+default: 0
+writable: true
+values:
+  - type: IntChoice
+    bits: 32
+    choices: [0,2]

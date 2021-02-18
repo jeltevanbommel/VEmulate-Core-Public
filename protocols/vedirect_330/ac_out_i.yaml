@@ -1,0 +1,16 @@
+name: AC output voltage
+key: AC_OUT_V
+unit: V
+scale: 0.01
+default: 0
+values:
+  - type: IntRange
+    min: 0
+    max: 24000
+    
+detailed_description: "Only on Phoenix Inverters"
+
+custom_gui_elements:
+  - type: range
+    min: 0
+    max: 2400

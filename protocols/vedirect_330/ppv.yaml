@@ -1,0 +1,16 @@
+name: Panel power
+key: PPV
+default: 0
+unit: W
+values:
+  - type: IntRange
+    min: 0
+    max: 2147483647
+
+# description section for GUI
+detailed_description: "Panel power"
+
+custom_gui_elements:
+  - type: range
+    min: 0
+    max: 2147483647

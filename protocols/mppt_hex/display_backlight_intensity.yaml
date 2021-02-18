@@ -1,0 +1,7 @@
+name: Display backlight intensity
+key: 0x0401
+default: 0
+values:
+  - type: IntChoice
+    bits: 8
+    choices: [0,1]

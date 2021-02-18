@@ -1,0 +1,10 @@
+name: Load switch low level
+key: 0xED9C
+default: 0
+scale: 0.01
+unit: V
+values:
+  - type: IntRange
+    bits: 16
+    min: 0x0000
+    max: 0xFFFF

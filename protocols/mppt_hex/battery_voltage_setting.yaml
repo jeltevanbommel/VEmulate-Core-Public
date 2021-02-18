@@ -1,0 +1,9 @@
+name: Battery voltage setting
+key: 0xEDEA
+default: 0
+unit: V
+writable: true
+values:
+  - type: IntChoice
+    bits: 8
+    choices: [0,12,24,36,48]

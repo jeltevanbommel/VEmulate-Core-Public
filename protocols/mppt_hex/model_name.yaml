@@ -1,0 +1,7 @@
+name: Model Name
+key: 0x010B
+default: SmartSolar Charger MPPT 75/10
+values:
+  - type: StringRandom
+    bits: 240 # 30 bytes
+    length: 30

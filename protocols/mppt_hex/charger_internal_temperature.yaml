@@ -1,0 +1,12 @@
+name: Charger internal temperature
+key: 0xEDDB
+default: 0
+scale: 0.01
+unit: °C
+writable: true
+values:
+  - type: IntRange
+    bits: 16
+    signed: true
+    min: 0x0000
+    max: 0xFFFF

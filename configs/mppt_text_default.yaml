@@ -1,0 +1,28 @@
+device: MPPT # Name of the device
+name: Test 1 # Name of the test
+protocol: text # Protocol used in this test, 'text' to only support text protocol, 'text_hex' to support both text and hex protocols, 'hex' to only support hex protocol
+version: 0x4147 # Firmware version, optional if not using hex protocol
+product_id: 0xA04C # Product ID, optional if not using hex protocol
+bootloader: 0x51FA51FA51FA51FA51FA # Payload required to enter boot mode, false by default to disable 'boot' command
+
+preset: vedirect_330
+
+preset_fields:
+  - v:      default
+  - vpv:    default
+  - ppv:    default
+  - i:      default
+  - il:     default
+  - load:   default
+  - relay:  default
+  - h19:    default
+  - h20:    default
+  - h21:    default
+  - h22:    default
+  - h23:    default
+  - err:    default
+  - fw:     default
+  - pid:    default
+  - ser:    default
+  - hsds:   default
+  - ttg:    default

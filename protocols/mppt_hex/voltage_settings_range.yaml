@@ -1,0 +1,9 @@
+name: Voltage settings range
+key: 0xEDCE
+default: 0
+unit: V
+values:
+  - type: IntRange # TODO Low byte is min voltage, high byte is high voltage; ensure min voltage <= max voltage?
+    bits: 16
+    min: 0x0000
+    max: 0xFFFF

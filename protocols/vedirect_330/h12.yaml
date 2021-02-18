@@ -1,0 +1,15 @@
+name: H12
+key: H12
+default: 0
+values:
+  - type: IntRange
+    min: 0
+    max: 2147483647
+
+# description section for GUI
+detailed_description: "Number of high main voltage alarms"
+
+custom_gui_elements:
+  - type: range
+    min: 0
+    max: 2147483647

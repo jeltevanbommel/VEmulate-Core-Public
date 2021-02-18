@@ -1,0 +1,8 @@
+name: Manual equalisation pending # TODO Values not defined in documentation
+key: 0x2018
+default: 0
+values:
+  - type: IntRange
+    bits: 8
+    min: 0x00
+    max: 0xFF

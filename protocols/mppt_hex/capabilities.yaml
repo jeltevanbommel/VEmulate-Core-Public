@@ -1,0 +1,8 @@
+name: Capabilities
+key: 0x0140
+default: 0x00000000
+values:
+  - type: IntRange
+    bits: 32
+    min: 0x00000000
+    max: 0xFFFFFFFF

@@ -1,0 +1,7 @@
+name: Solar activity
+key: 0x2030
+default: 0
+values:
+  - type: IntChoice
+    bits: 8
+    choices: [0,1]

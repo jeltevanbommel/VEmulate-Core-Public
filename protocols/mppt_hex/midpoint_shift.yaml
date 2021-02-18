@@ -1,0 +1,11 @@
+name: Mid-point shift
+key: 0xEDA7
+default: 0
+unit: min
+writable: true
+values:
+  - type: IntRange
+    bits: 16
+    signed: true
+    min: 0x0000
+    max: 0xFFFF

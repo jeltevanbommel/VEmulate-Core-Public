@@ -1,0 +1,182 @@
+device: MPPT # Name of the device
+name: Test 1 # Name of the test
+protocol: hex # Protocol used in this test, 'text' to only support text protocol, 'text_hex' to support both text and hex protocols, 'hex' to only support hex protocol
+version: 0x4147 # Firmware version, optional if not using hex protocol
+product_id: 0xA04C # Product ID, optional if not using hex protocol
+bootloader: 0x51FA51FA51FA51FA51FA # Payload required to enter boot mode, false by default to disable 'boot' command
+
+preset: mppt_hex
+preset_hex_fields:
+  # Product information registers
+  - product_id: random
+  - group_id: random
+  - serial_number: random
+  - model_name: random
+  - capabilities: random
+
+  # Generic device control registers
+  - device_mode: random
+  - device_state: random
+  - remote_control_used: random
+  - device_off_reason_1: random
+  - device_off_reason_2: random
+
+  # Battery settings registers
+  - batterysafe_mode: random
+  - adaptive_mode: random
+  - automatic_equalisation_mode: random
+  - battery_bulk_time_limit: random
+  - battery_absorption_time_limit: random
+  - battery_absorption_voltage: random
+  - battery_float_voltage: random
+  - battery_equalisation_voltage: random
+  - battery_temp_compensation: random
+  - battery_type: random
+  - battery_maximum_current: random
+  - battery_voltage: random
+  - battery_temperature: random
+  - battery_voltage_setting: random
+  - bms_present: random
+  - tail_current: random
+  - low_temperature_charge_current: random
+  - auto_equalise_stop_on_voltage: random
+  - equalisation_current_level: random
+  - equalisation_duration: random
+  - rebulk_voltage_offset: random
+  - battery_low_temperature_level: random
+  - voltage_compensation: random
+
+  # Charger data registers
+  - battery_temperature: random
+  - charger_maximum_current: random
+  - system_yield: random
+  - user_yield: random
+  - charger_internal_temperature: random
+  - charger_error_code: random
+  - charger_current: random
+  - charger_voltage: random
+  - additional_charger_state_info: random
+  - yield_today: random
+  - maximum_power_today: random
+  - yield_yesterday: random
+  - maximum_power_yesterday: random
+  - voltage_settings_range: random
+  - history_version: random
+  - streetlight_version: random
+  - adjustable_voltage_minimum: random
+  - adjustable_voltage_maximum: random
+
+  # Solar panel data registers
+  - panel_power: random
+  - panel_voltage: random
+  - panel_current: random
+  - panel_maximum_voltage: random
+  - tracker_mode: random
+
+  # Load output data/settings registers
+  - load_current: random
+  - load_offset_voltage: random
+  - load_output_control: random
+  - load_output_voltage: random
+  - load_output_state: random
+  - load_switch_high_level: random
+  - load_switch_low_level: random
+  - load_output_off_reason: random
+  - load_aes_timer: random
+
+  # Relay settings registers
+  - relay_operation_mode: random
+  - relay_battery_low_voltage_set: random
+  - relay_battery_low_voltage_clear: random
+  - relay_battery_high_voltage_set: random
+  - relay_battery_high_voltage_clear: random
+  - relay_panel_high_voltage_set: random
+  - relay_panel_high_voltage_clear: random
+  - relay_minimum_enabled_time: random
+
+  # Lighting controller timer
+  - timer_event_0: random
+  - timer_event_1: random
+  - timer_event_2: random
+  - timer_event_3: random
+  - timer_event_4: random
+  - timer_event_5: random
+  - midpoint_shift: random
+  - gradual_dim_speed: random
+  - panel_voltage_night: random
+  - panel_voltage_day: random
+  - sunset_delay: random
+  - sunrise_delay: random
+  - aes_timer: random
+  - solar_activity: random
+  - time_of_day: random
+
+  # VE.Direct port functions
+  - tx_port_operation_mode: random
+  - rx_port_operation_mode: random
+
+  # Restore factory defaults
+  - restore_default: random
+
+  # History data
+  - clear_history: random
+  - total_history: random
+  - daily_history_00: random
+  - daily_history_01: random
+  - daily_history_02: random
+  - daily_history_03: random
+  - daily_history_04: random
+  - daily_history_05: random
+  - daily_history_06: random
+  - daily_history_07: random
+  - daily_history_08: random
+  - daily_history_09: random
+  - daily_history_10: random
+  - daily_history_11: random
+  - daily_history_12: random
+  - daily_history_13: random
+  - daily_history_14: random
+  - daily_history_15: random
+  - daily_history_16: random
+  - daily_history_17: random
+  - daily_history_18: random
+  - daily_history_19: random
+  - daily_history_20: random
+  - daily_history_21: random
+  - daily_history_22: random
+  - daily_history_23: random
+  - daily_history_24: random
+  - daily_history_25: random
+  - daily_history_26: random
+  - daily_history_27: random
+  - daily_history_28: random
+  - daily_history_29: random
+  - daily_history_30: random
+
+  # Pluggable display settings
+  - display_backlight_mode: random
+  - display_backlight_intensity: random
+  - display_scroll_text_speed: random
+  - display_setup_lock: random
+  - display_temperature_unit: random
+
+  # Remote control registers
+  - charge_algorithm_version: random
+  - charge_voltage_setpoint: random
+  - battery_voltage_sense: random
+  - battery_temperature_sense: random
+  - remote_command: random
+  - charge_state_elapsed_time: random
+  - absorption_time: random
+  - error_code: random
+  - battery_charge_current: random
+  - battery_idle_voltage: random
+  - device_state_2: random
+  - network_info: random
+  - network_mode: random
+  - network_status_register: random
+  - total_charge_current: random
+  - charge_current_percentage: random
+  - charge_current_limit: random
+  - manual_equalisation_pending: random
+  - total_dc_input_power: random

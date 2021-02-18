@@ -1,0 +1,9 @@
+name: Maximum power today
+key: 0xEDD2
+default: 0
+unit: W
+values:
+  - type: IntRange
+    bits: 16 # 4 bytes in older firmware
+    min: 0x0000
+    max: 0xFFFF

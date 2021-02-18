@@ -1,0 +1,43 @@
+name: Error code
+key: ERR
+default: 0
+values:
+  - type: Mapping
+    dict: { 'No error': '0',
+            'Battery voltage too high': '2',
+            'Charger temperature too high': '17',
+            'Charger over current': '18',
+            'Charger current reversed': '19',
+            'Bulk time limit exceeded': '20',
+            'Current sensor issue (sensor bias/sensor broken)': '21',
+            'Terminals overheated': '26',
+            'Input voltage too high (solar panel)': '33',
+            'Input current too high (solar panel)': '34',
+            'Input shutdown (due to excessive battery voltage)': '38',
+            'Factory calibration data lost': '116',
+            'Invalid/incompatible firmware': '117',
+            'User settings invalid': '119'}
+
+detailed_description: "The error code of the device (relevant when the device is in the fault state).\n\n Note1: Error 19 can be ignored, this condition regularly occurs during start-up or shutdown of 
+                      the MPPT charger. Since version 1.15 this error will no longer be reported. \n
+                      Note2: Error 21 can be ignored for 5 minutes, this condition regularly occurs during start-up 
+                      or shutdown of the MPPT charger. Since version 1.16 this warning will no longer be reported
+                      when it is not persistent. "
+
+
+custom_gui_elements:
+  - type: dropdown
+    values: {'No error': '0',
+             'Battery voltage too high': '2',
+             'Charger temperature too high': '17',
+             'Charger over current': '18',
+             'Charger current reversed': '19',
+             'Bulk time limit exceeded': '20',
+             'Current sensor issue (sensor bias/sensor broken)': '21',
+             'Terminals overheated': '26',
+             'Input voltage too high (solar panel)': '33',
+             'Input current too high (solar panel)': '34',
+             'Input shutdown (due to excessive battery voltage)': '38',
+             'Factory calibration data lost': '116',
+             'Invalid/incompatible firmware': '117',
+             'User settings invalid': '119'}

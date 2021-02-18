@@ -1,0 +1,10 @@
+name: Yield yesterday
+key: 0xEDD1
+default: 0
+scale: 0.01
+unit: kWh
+values:
+  - type: IntRange
+    bits: 16 # 4 bytes in older firmware
+    min: 0x0000
+    max: 0xFFFF

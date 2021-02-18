@@ -1,0 +1,7 @@
+name: Display temperature unit
+key: 0x0404
+default: 0
+values:
+  - type: IntChoice
+    bits: 8
+    choices: [0,1]

@@ -1,0 +1,15 @@
+name: Battery current
+key: I
+unit: mA
+default: 0
+values:
+  - type: IntRange
+    min: -10000
+    max: 10000
+
+detailed_description: "Both for MPPTs and BMVs: when > 0, the battery is being charged, < 0 the battery is being discharged."
+
+custom_gui_elements:
+  - type: range
+    min: -10000
+    max: 10000

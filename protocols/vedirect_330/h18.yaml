@@ -1,0 +1,17 @@
+name: H18
+key: H18
+default: 0
+unit: kWh
+scale: 0.01
+values:
+  - type: IntRange
+    min: -2147483648
+    max: 2147483647
+
+# description section for GUI
+detailed_description: "Amount of charged energy"
+
+custom_gui_elements:
+  - type: range
+    min: -2147483648
+    max: 2147483647

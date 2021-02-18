@@ -1,0 +1,8 @@
+name: Remote command
+key: 0x2004
+default: 0
+writable: true
+values:
+  - type: IntChoice
+    bits: 8
+    choices: [1,2,3,4]

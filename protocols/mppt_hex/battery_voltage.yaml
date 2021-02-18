@@ -1,0 +1,10 @@
+name: Battery voltage
+key: 0xEDEF
+default: 0
+unit: V
+writable: true
+values:
+  - type: IntRange
+    bits: 16
+    min: 0x0000
+    max: 0xFFFF

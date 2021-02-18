@@ -1,0 +1,12 @@
+name: State of operation
+key: CS
+default: 9
+values:
+  - type: Mapping
+    dict: { 'Off': 0, 'Low power': 1, 'Fault': 2, 'Bulk': 3, 'Absorption': 4, 'Float': 5, 'Inverting': 9 }
+# description section for GUI
+detailed_description: "The state of operation"
+
+custom_gui_elements:
+  - type: dropdown
+    values: { 'Off': 0, 'Low power': 1, 'Fault': 2, 'Bulk': 3, 'Absorption': 4, 'Float': 5, 'Inverting': 9 }

@@ -1,0 +1,11 @@
+name: Relay battery low voltage clear
+key: 0x0351
+default: 0
+scale: 0.01
+unit: V
+writable: true
+values:
+  - type: IntRange
+    bits: 16
+    min: 0x0000
+    max: 0xFFFF

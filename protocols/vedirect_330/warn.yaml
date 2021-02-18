@@ -1,0 +1,37 @@
+name: Warning reason
+key: WARN
+default: 0
+values:
+  - type: BitBuffer
+    values:
+      - type: Mapping
+        dict: {'High V AC out': 1, "None": 0}
+      - type: Mapping
+        dict: {'Low V AC out': 1, "None": 0}
+      - type: Mapping
+        dict: {'DC-Ripple': 1, "None": 0}
+      - type: Mapping
+        dict: {'Overload': 1, "None": 0}
+      - type: Mapping
+        dict: {'Mid Voltage': 1, "None": 0}
+      - type: Mapping
+        dict: {'High Temperature Alarm': 1, "None": 0}
+      - type: Mapping
+        dict: {'Low Temperature Alarm': 1, "None": 0}
+      - type: Mapping
+        dict: {'High Starter Voltage Alarm': 1, "None": 0}
+      - type: Mapping
+        dict: {'Low Starter Voltage Alarm': 1, "None": 0}
+      - type: Mapping
+        dict: {'Low SOC Alarm': 1, "None": 0}
+      - type: Mapping
+        dict: {'High Voltage Alarm': 1, "None": 0}
+      - type: Mapping
+        dict: {'Low Voltage Alarm': 1, "None": 0}
+    bits: [1,1,1,1,1,1,1,1,1,1,1,1]
+
+# description section for GUI
+detailed_description: "Provides the cause of a warning on inverters. Warning reason is implemented for inverters only. It provides the cause of a warning. The bit
+                       definition is the same as for AR. More warnings can be active at the same time. Warnings
+                       always represent the current status of the measured parameter (temperature/battery voltage in/VAC-out). This is different than for alarm reason AR. AR remembers the reason what caused the
+                       inverter to switch off (active protection) until it is switched on again."

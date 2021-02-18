@@ -1,0 +1,21 @@
+name: Time-to-go
+key: TTG
+unit: Minutes
+default: '---'
+values:
+  - type: SelectRandom
+    values:
+      - type: StringFixed
+        value: '---'
+        amount: 1
+      - type: IntFixed
+        value: -1
+        amount: 1
+      - type: IntRange
+        min: -1
+        max: 10000
+        amount: 10
+
+
+detailed_description: "When the BMV is not synchronised, these statistics have no meaning, so '---' will be sent instead of a
+value. When the battery is not discharging the time- to-go is infinite. This is represented as -1."

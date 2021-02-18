@@ -1,0 +1,16 @@
+name: H7
+key: H7
+default: 0
+unit: mV
+values:
+  - type: IntRange
+    min: -2147483648
+    max: 2147483647
+
+# description section for GUI
+detailed_description: "Minimum main (battery) voltage"
+
+custom_gui_elements:
+  - type: range
+    min: -2147483648
+    max: 2147483647

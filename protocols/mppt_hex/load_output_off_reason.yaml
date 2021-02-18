@@ -1,0 +1,8 @@
+name: Load output off reason
+key: 0xED91
+default: 0
+values:
+  - type: IntRange
+    bits: 8
+    min: 0
+    max: 7

@@ -1,0 +1,35 @@
+name: Alarm reason
+key: AR
+default: 0
+values:
+  - type: BitBuffer
+    values:
+      - type: Mapping
+        dict: {'High V AC out': 1, "None": 0}
+      - type: Mapping
+        dict: {'Low V AC out': 1, "None": 0}
+      - type: Mapping
+        dict: {'DC-Ripple': 1, "None": 0}
+      - type: Mapping
+        dict: {'Overload': 1, "None": 0}
+      - type: Mapping
+        dict: {'Mid Voltage': 1, "None": 0}
+      - type: Mapping
+        dict: {'High Temperature Alarm': 1, "None": 0}
+      - type: Mapping
+        dict: {'Low Temperature Alarm': 1, "None": 0}
+      - type: Mapping
+        dict: {'High Starter Voltage Alarm': 1, "None": 0}
+      - type: Mapping
+        dict: {'Low Starter Voltage Alarm': 1, "None": 0}
+      - type: Mapping
+        dict: {'Low SOC Alarm': 1, "None": 0}
+      - type: Mapping
+        dict: {'High Voltage Alarm': 1, "None": 0}
+      - type: Mapping
+        dict: {'Low Voltage Alarm': 1, "None": 0}
+    bits: [1,1,1,1,1,1,1,1,1,1,1,1]
+
+detailed_description: "This field describes the cause of the alarm. Since multiple alarm conditions can
+                       be present at the same time the values of the separate alarm conditions are added. The value
+                       total is sent in decimal notation"

@@ -1,0 +1,10 @@
+name: Sunrise delay
+key: 0xED97
+default: 0
+unit: minutes
+writable: true
+values:
+  - type: IntRange
+    bits: 16
+    min: 0x0000
+    max: 0xFFFF

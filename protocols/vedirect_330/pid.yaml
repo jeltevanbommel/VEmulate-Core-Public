@@ -1,0 +1,45 @@
+name: Product ID
+key: PID
+default: 0x000
+values:
+  - type: Mapping
+    dict: { 'BMV-700': 0x203, 'BMV-702':0x204, 'BMV-700H': 0x205
+            ,'BlueSolar MPPT 75/10': 0xA04C
+            ,'BlueSolar MPPT 150/60': 0xA04E
+            ,'BMV-702 0x204 BlueSolar MPPT 150/70': 0xA046
+            ,'BMV-700H 0x205 BlueSolar MPPT 150/85': 0xA04F
+            ,'BlueSolar MPPT 75/10 0xA04C BlueSolar MPPT 150/100': 0xA047
+            ,'BlueSolar MPPT 70/15*': 0x300, 'SmartSolar MPPT 150/100': 0xA051
+            ,'BlueSolar MPPT 75/15':  0xA042, 'SmartSolar MPPT 250/100': 0xA050
+            ,'BlueSolar MPPT 100/15': 0xA043, 'Phoenix Inverter 12V 250VA 230V': 0xA201
+            ,'BlueSolar MPPT 100/30 rev1*': 0xA044, 'Phoenix Inverter 24V 250VA 230V': 0xA202
+            ,'BlueSolar MPPT 100/30 rev2': 0xA04A, 'Phoenix Inverter 48V 250VA 230V': 0xA204
+            ,'BlueSolar MPPT 150/35 rev1*': 0xA041, 'Phoenix Inverter 12V 375VA 230V': 0xA211
+            ,'BlueSolar MPPT 150/35 rev2': 0xA04B, 'Phoenix Inverter 24V 375VA 230V': 0xA212
+            ,'BlueSolar MPPT 150/45': 0xA04D, 'Phoenix Inverter 48V 375VA 230V': 0xA214
+            ,'BlueSolar MPPT 75/50*': 0xA040, 'Phoenix Inverter 12V 500VA 230V': 0xA221
+            ,'BlueSolar MPPT 100/50 rev1*': 0xA045, 'Phoenix Inverter 24V 500VA 230V': 0xA222
+            ,'BlueSolar MPPT 100/50 rev2': 0xA049 }
+
+# description section for GUI
+detailed_description: "Product ID"
+
+custom_gui_elements:
+  - type: dropdown
+    values: { 'BMV-700': 0x203, 'BMV-702': 0x204, 'BMV-700H': 0x205
+              ,'BlueSolar MPPT 75/10': 0xA04C
+              ,'BlueSolar MPPT 150/60': 0xA04E
+              ,'BMV-702 0x204 BlueSolar MPPT 150/70': 0xA046
+              ,'BMV-700H 0x205 BlueSolar MPPT 150/85': 0xA04F
+              ,'BlueSolar MPPT 75/10 0xA04C BlueSolar MPPT 150/100': 0xA047
+              ,'BlueSolar MPPT 70/15*': 0x300, 'SmartSolar MPPT 150/100': 0xA051
+              ,'BlueSolar MPPT 75/15': 0xA042, 'SmartSolar MPPT 250/100': 0xA050
+              ,'BlueSolar MPPT 100/15': 0xA043, 'Phoenix Inverter 12V 250VA 230V': 0xA201
+              ,'BlueSolar MPPT 100/30 rev1*': 0xA044, 'Phoenix Inverter 24V 250VA 230V': 0xA202
+              ,'BlueSolar MPPT 100/30 rev2': 0xA04A, 'Phoenix Inverter 48V 250VA 230V': 0xA204
+              ,'BlueSolar MPPT 150/35 rev1*': 0xA041, 'Phoenix Inverter 12V 375VA 230V': 0xA211
+              ,'BlueSolar MPPT 150/35 rev2': 0xA04B, 'Phoenix Inverter 24V 375VA 230V': 0xA212
+              ,'BlueSolar MPPT 150/45': 0xA04D, 'Phoenix Inverter 48V 375VA 230V': 0xA214
+              ,'BlueSolar MPPT 75/50*': 0xA040, 'Phoenix Inverter 12V 500VA 230V': 0xA221
+              ,'BlueSolar MPPT 100/50 rev1*': 0xA045, 'Phoenix Inverter 24V 500VA 230V': 0xA222
+              ,'BlueSolar MPPT 100/50 rev2': 0xA049 }

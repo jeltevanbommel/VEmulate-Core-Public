@@ -1,0 +1,17 @@
+name: H20
+key: H20
+default: 0
+unit: kWh
+scale: 0.01
+values:
+  - type: IntRange
+    min: -2147483648
+    max: 2147483647
+
+# description section for GUI
+detailed_description: "Yield today"
+
+custom_gui_elements:
+  - type: range
+    min: -2147483648
+    max: 2147483647

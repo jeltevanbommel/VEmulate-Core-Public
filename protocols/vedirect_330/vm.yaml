@@ -1,0 +1,16 @@
+name: VM
+key: Vm
+default: 0
+unit: mV
+values:
+  - type: IntRange
+    min: -1
+    max: 2147483647
+
+# description section for GUI
+detailed_description: "Mid-point voltage of the battery bank"
+
+custom_gui_elements:
+  - type: range
+    min: 0
+    max: 2147483647

@@ -1,0 +1,8 @@
+name: Voltage
+key: 0x1234
+default: 0
+values:
+  - type: IntFixed
+    amount: 1
+    value: 0xF00F
+    bits: 16

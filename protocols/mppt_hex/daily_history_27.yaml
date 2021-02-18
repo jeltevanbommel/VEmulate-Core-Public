@@ -1,0 +1,68 @@
+name: Daily history 27 days ago
+key: 0x106B
+default: 0
+values:
+  - type: BitBuffer
+    values:
+      - type: IntFixed # Reserved
+        bits: 8
+        value: 1
+      - type: IntRange # Yield
+        bits: 32
+        min: 0x00000000
+        max: 0xFFFFFFFF
+      - type: IntRange # Consumed
+        bits: 32
+        min: 0x00000000
+        max: 0xFFFFFFFF
+      - type: IntRange # Battery voltage maximum
+        bits: 16
+        min: 0x0000
+        max: 0xFFFF
+      - type: IntRange # Battery voltage minimum
+        bits: 16
+        min: 0x0000
+        max: 0xFFFF
+      - type: IntFixed # Error database
+        bits: 8
+        value: 0
+      - type: IntChoice # Error 0
+        bits: 8
+        choices: [ 0,2,17,18,19,20,21,26,28,33,34,38,39,66,67,68,116,117,119 ]
+      - type: IntChoice # Error 1
+        bits: 8
+        choices: [ 0,2,17,18,19,20,21,26,28,33,34,38,39,66,67,68,116,117,119 ]
+      - type: IntChoice # Error 2
+        bits: 8
+        choices: [ 0,2,17,18,19,20,21,26,28,33,34,38,39,66,67,68,116,117,119 ]
+      - type: IntChoice # Error 3
+        bits: 8
+        choices: [ 0,2,17,18,19,20,21,26,28,33,34,38,39,66,67,68,116,117,119 ]
+      - type: IntRange # Time bulk
+        bits: 16
+        min: 0x0000
+        max: 0xFFFF
+      - type: IntRange # Time absorption
+        bits: 16
+        min: 0x0000
+        max: 0xFFFF
+      - type: IntRange # Time float
+        bits: 16
+        min: 0x0000
+        max: 0xFFFF
+      - type: IntRange # Power maximum
+        bits: 32
+        min: 0x00000000
+        max: 0xFFFFFFFF
+      - type: IntRange # Battery current maximum
+        bits: 16
+        min: 0x0000
+        max: 0xFFFF
+      - type: IntRange # Panel voltage maximum
+        bits: 16
+        min: 0x0000
+        max: 0xFFFF
+      - type: IntRange # Day sequence number
+        bits: 16
+        min: 0
+        max: 365

@@ -1,0 +1,15 @@
+name: H5
+key: H5
+default: 0
+values:
+  - type: IntRange
+    min: -2147483648
+    max: 2147483647
+
+# description section for GUI
+detailed_description: "Number of full discharges"
+
+custom_gui_elements:
+  - type: range
+    min: -2147483648
+    max: 2147483647

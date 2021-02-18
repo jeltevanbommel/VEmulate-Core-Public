@@ -1,0 +1,8 @@
+name: Restore default # TODO Any value can be written to this field to reset the device to factory settings. The data part will be ignored
+key: 0x0004
+default: 0
+writable: true
+values:
+  - type: IntFixed
+    bits: 8
+    value: 0

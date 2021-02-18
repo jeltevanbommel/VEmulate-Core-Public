@@ -1,0 +1,18 @@
+name: Historical data
+key: HSDS
+unit: mV
+default: 0
+values:
+  - type: IntRange
+    min: 0
+    max: 364
+
+# description section for GUI
+detailed_description: "The day sequence number, a change in this number indicates a new day. This
+  implies that the historical data has changed. Range 0..364.
+  Note: The HSDS field is available in the MPPT charger since version v1.16."
+
+custom_gui_elements:
+  - type: range
+    min: 0
+    max: 364

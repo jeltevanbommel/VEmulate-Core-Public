@@ -1,0 +1,16 @@
+name: Alarm condition active
+key: Alarm
+default: 'OFF'
+values:
+  - type: Mapping
+    dict: { 'OFF': 'OFF', 'ON': 'ON' }
+
+detailed_description: "This shows the buzzer alarm state of the BMV. During normal operation, this will be 'OFF'.
+                       When a buzzer alarm occurs the value will change to 'ON'.
+                       Note: This refers to the value of the alarm condition, and not the buzzer itself. This means
+                       that once a condition has occurred, the value will be 'ON' until all alarm conditions have
+                       cleared; regardless of whether or not a button has been pressed to silence the buzzer"
+
+custom_gui_elements:
+  - type: dropdown
+    values: { 'OFF': 'OFF', 'ON': 'ON' }

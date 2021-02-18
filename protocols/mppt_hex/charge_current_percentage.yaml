@@ -1,0 +1,9 @@
+name: Charge current percentage
+key: 0x2014
+default: 0
+unit: '%'
+values:
+  - type: IntRange
+    bits: 8
+    min: 0x00
+    max: 0xFF

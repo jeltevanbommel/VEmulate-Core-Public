@@ -1,0 +1,8 @@
+name: Device Off Reason (2) # TODO What exactly is this field? On the MPPT 75|10, this field returns 0xFFFFFFFF while field 0x0205 returns 0x01
+key: 0x0207
+default: 0
+values:
+  - type: IntRange
+    bits: 32
+    min: 0x00
+    max: 0xFF

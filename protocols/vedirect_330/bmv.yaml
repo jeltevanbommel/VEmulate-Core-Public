@@ -1,0 +1,13 @@
+name: Model description (deprecated)
+key: BMV
+default: '700'
+values:
+  - type: StringChoice
+    choices: ['602S', '700', '702', '700H', 'UNKNOWN']
+
+detailed_description: "This field contains a textual description of the BMV model, for example 602S or 702. It is 
+                        deprecated, refer to the field PID instead."
+
+custom_gui_elements:
+  - type: dropdown
+    values: { '602S': '602S', '700': '700', '702': '702', '700H': '700H', 'UNKNOWN': 'UNKNOWN' }

@@ -1,0 +1,18 @@
+name: Relay
+key: Relay
+default: 'OFF'
+values:
+  - type: Mapping
+    dict: { 'OFF': 'OFF', 'ON': 'ON' }
+
+# description section for GUI
+detailed_description: "Relay alarm state of the BMV and the SmartSolar MPPT chargers. This shows the relay alarm state of the BMV and the SmartSolar MPPT chargers. During
+                       normal operation, this will be 'OFF'. When a relay alarm occurs the value will change to
+                       'ON'.
+                       Note for both Alarm and Relay: BMV-600’s with firmware v2.09 or lower used to send 'On'
+                       and 'Off' instead of 'On' and 'Off'. It is therefore recommended to use a case-insensitive
+                       string comparison in your implementation, for example stricmp()."
+
+custom_gui_elements:
+  - type: dropdown
+    values: { 'OFF': 'OFF', 'ON': 'ON' }

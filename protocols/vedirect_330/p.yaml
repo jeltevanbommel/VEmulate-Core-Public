@@ -1,0 +1,16 @@
+name: Instantaneous power
+key: P
+default: 0
+unit: W
+values:
+  - type: IntRange
+    min: 0
+    max: 2147483647
+
+# description section for GUI
+detailed_description: "Instantaneous power"
+
+custom_gui_elements:
+  - type: range
+    min: 0
+    max: 2147483647

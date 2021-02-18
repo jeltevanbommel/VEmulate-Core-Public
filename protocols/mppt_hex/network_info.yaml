@@ -1,0 +1,8 @@
+name: Network info
+key: 0x200D
+default: 0
+values:
+  - type: IntRange
+    bits: 8
+    min: 0x00
+    max: 0xFF

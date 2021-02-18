@@ -1,0 +1,10 @@
+name: Adjustable voltage minimum
+key: 0x2211
+default: 0
+unit: V
+writable: true
+values:
+  - type: IntRange
+    bits: 16
+    min: 0x0000
+    max: 0xFFFF

@@ -1,0 +1,16 @@
+name: H3
+key: H3
+default: 0
+unit: mAh
+values:
+  - type: IntRange
+    min: -2147483648
+    max: 2147483647
+
+# description section for GUI
+detailed_description: "Depth of the average discharge"
+
+custom_gui_elements:
+  - type: range
+    min: -2147483648
+    max: 2147483647

@@ -1,0 +1,7 @@
+name: Voltage
+key: V
+default: 0
+values:
+  - type: IntFixed
+    amount: 1
+    value: 1

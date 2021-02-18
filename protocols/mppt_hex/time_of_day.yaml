@@ -1,0 +1,12 @@
+name: Time-of-day
+key: 0x2031
+default: 0
+unit: minutes since midnight
+values:
+  - type: IntRange
+    bits: 16
+    min: 0
+    max: 1440 # 1440 minutes in a day
+  - type: IntFixed
+    bits: 16
+    value: 0xFFFF # Time is unknown

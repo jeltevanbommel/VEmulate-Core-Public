@@ -1,0 +1,7 @@
+name: Serial Number
+key: 0x0104
+default: HQ20339BIQ1
+values:
+  - type: StringRandom
+    bits: 128 # 16 bytes
+    length: 12

@@ -1,0 +1,11 @@
+name: Total charge current
+key: 0x2013
+default: 0
+scale: 0.001
+unit: A
+values:
+  - type: IntRange
+    bits: 32
+    signed: true
+    min: 0x00000000
+    max: 0xFFFFFFFF

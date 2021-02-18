@@ -1,0 +1,9 @@
+name: Charge state elapsed time
+key: 0x2007
+default: 0
+unit: ms
+values:
+  - type: IntRange
+    bits: 32
+    min: 0x00000000
+    max: 0xFFFFFFFF

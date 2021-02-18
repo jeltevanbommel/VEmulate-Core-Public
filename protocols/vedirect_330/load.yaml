@@ -1,0 +1,12 @@
+name: Load Output State
+key: LOAD
+default: 'OFF'
+values:
+  - type: Mapping
+    dict: { 'OFF': 'OFF', 'ON': 'ON' }
+
+detailed_description: "Load output state (ON/OFF) and available since version v1.12, only for models with a load output."
+
+custom_gui_elements:
+  - type: dropdown
+    values: { 'OFF': 'OFF', 'ON': 'ON' }

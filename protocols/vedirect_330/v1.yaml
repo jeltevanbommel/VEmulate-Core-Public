@@ -1,0 +1,24 @@
+
+name: Voltage
+key: V1
+unit: mV
+default: 0
+values:
+  - type: BitBuffer
+    values:
+      - type: IntFixed
+        value: 3
+        bits: 5
+      - type: IntFixed
+        value: 8
+        amount: 1
+        bits: 5
+      - type: Mapping
+        dict: { 'OFF': '0', 'ON': '1'}
+        bits: 6
+invalid:
+  - value: 2
+
+# description section for GUI  
+description: Main or channel 1 (battery) voltage
+detailed_description: NaN

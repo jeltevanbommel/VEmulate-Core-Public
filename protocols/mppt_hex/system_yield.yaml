@@ -1,0 +1,10 @@
+name: System yield
+key: 0xEDDD
+default: 0
+scale: 0.01
+unit: kWh
+values:
+  - type: IntRange
+    bits: 32
+    min: 0x00000000
+    max: 0xFFFFFFFF

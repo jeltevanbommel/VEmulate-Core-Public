@@ -1,0 +1,182 @@
+device: MPPT # Name of the device
+name: Test 1 # Name of the test
+protocol: hex # Protocol used in this test, 'text' to only support text protocol, 'text_hex' to support both text and hex protocols, 'hex' to only support hex protocol
+version: 0x4147 # Firmware version, optional if not using hex protocol
+product_id: 0xA04C # Product ID, optional if not using hex protocol
+bootloader: 0x51FA51FA51FA51FA51FA # Payload required to enter boot mode, false by default to disable 'boot' command
+
+preset: mppt_hex
+preset_hex_fields:
+  # Product information registers
+  - product_id: default
+  - group_id: default
+  - serial_number: default
+  - model_name: default
+  - capabilities: default
+
+  # Generic device control registers
+  - device_mode: default
+  - device_state: default
+  - remote_control_used: default
+  - device_off_reason_1: default
+  - device_off_reason_2: default
+
+  # Battery settings registers
+  - batterysafe_mode: default
+  - adaptive_mode: default
+  - automatic_equalisation_mode: default
+  - battery_bulk_time_limit: default
+  - battery_absorption_time_limit: default
+  - battery_absorption_voltage: default
+  - battery_float_voltage: default
+  - battery_equalisation_voltage: default
+  - battery_temp_compensation: default
+  - battery_type: default
+  - battery_maximum_current: default
+  - battery_voltage: default
+  - battery_temperature: default
+  - battery_voltage_setting: default
+  - bms_present: default
+  - tail_current: default
+  - low_temperature_charge_current: default
+  - auto_equalise_stop_on_voltage: default
+  - equalisation_current_level: default
+  - equalisation_duration: default
+  - rebulk_voltage_offset: default
+  - battery_low_temperature_level: default
+  - voltage_compensation: default
+
+  # Charger data registers
+  - battery_temperature: default
+  - charger_maximum_current: default
+  - system_yield: default
+  - user_yield: default
+  - charger_internal_temperature: default
+  - charger_error_code: default
+  - charger_current: default
+  - charger_voltage: default
+  - additional_charger_state_info: default
+  - yield_today: default
+  - maximum_power_today: default
+  - yield_yesterday: default
+  - maximum_power_yesterday: default
+  - voltage_settings_range: default
+  - history_version: default
+  - streetlight_version: default
+  - adjustable_voltage_minimum: default
+  - adjustable_voltage_maximum: default
+
+  # Solar panel data registers
+  - panel_power: default
+  - panel_voltage: default
+  - panel_current: default
+  - panel_maximum_voltage: default
+  - tracker_mode: default
+
+  # Load output data/settings registers
+  - load_current: default
+  - load_offset_voltage: default
+  - load_output_control: default
+  - load_output_voltage: default
+  - load_output_state: default
+  - load_switch_high_level: default
+  - load_switch_low_level: default
+  - load_output_off_reason: default
+  - load_aes_timer: default
+
+  # Relay settings registers
+  - relay_operation_mode: default
+  - relay_battery_low_voltage_set: default
+  - relay_battery_low_voltage_clear: default
+  - relay_battery_high_voltage_set: default
+  - relay_battery_high_voltage_clear: default
+  - relay_panel_high_voltage_set: default
+  - relay_panel_high_voltage_clear: default
+  - relay_minimum_enabled_time: default
+
+  # Lighting controller timer
+  - timer_event_0: default
+  - timer_event_1: default
+  - timer_event_2: default
+  - timer_event_3: default
+  - timer_event_4: default
+  - timer_event_5: default
+  - midpoint_shift: default
+  - gradual_dim_speed: default
+  - panel_voltage_night: default
+  - panel_voltage_day: default
+  - sunset_delay: default
+  - sunrise_delay: default
+  - aes_timer: default
+  - solar_activity: default
+  - time_of_day: default
+
+  # VE.Direct port functions
+  - tx_port_operation_mode: default
+  - rx_port_operation_mode: default
+
+  # Restore factory defaults
+  - restore_default: default
+
+  # History data
+  - clear_history: default
+  - total_history: default
+  - daily_history_00: default
+  - daily_history_01: default
+  - daily_history_02: default
+  - daily_history_03: default
+  - daily_history_04: default
+  - daily_history_05: default
+  - daily_history_06: default
+  - daily_history_07: default
+  - daily_history_08: default
+  - daily_history_09: default
+  - daily_history_10: default
+  - daily_history_11: default
+  - daily_history_12: default
+  - daily_history_13: default
+  - daily_history_14: default
+  - daily_history_15: default
+  - daily_history_16: default
+  - daily_history_17: default
+  - daily_history_18: default
+  - daily_history_19: default
+  - daily_history_20: default
+  - daily_history_21: default
+  - daily_history_22: default
+  - daily_history_23: default
+  - daily_history_24: default
+  - daily_history_25: default
+  - daily_history_26: default
+  - daily_history_27: default
+  - daily_history_28: default
+  - daily_history_29: default
+  - daily_history_30: default
+
+  # Pluggable display settings
+  - display_backlight_mode: default
+  - display_backlight_intensity: default
+  - display_scroll_text_speed: default
+  - display_setup_lock: default
+  - display_temperature_unit: default
+
+  # Remote control registers
+  - charge_algorithm_version: default
+  - charge_voltage_setpoint: default
+  - battery_voltage_sense: default
+  - battery_temperature_sense: default
+  - remote_command: default
+  - charge_state_elapsed_time: default
+  - absorption_time: default
+  - error_code: default
+  - battery_charge_current: default
+  - battery_idle_voltage: default
+  - device_state_2: default
+  - network_info: default
+  - network_mode: default
+  - network_status_register: default
+  - total_charge_current: default
+  - charge_current_percentage: default
+  - charge_current_limit: default
+  - manual_equalisation_pending: default
+  - total_dc_input_power: default

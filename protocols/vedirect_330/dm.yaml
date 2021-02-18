@@ -1,0 +1,15 @@
+name: DM
+key: DM
+unit: ‰
+default: 0
+values:
+  - type: IntRange
+    min: 0
+    max: 1000
+
+detailed_description: "Mid-point deviation of the battery bank."
+
+custom_gui_elements:
+  - type: range
+    min: 0
+    max: 1000

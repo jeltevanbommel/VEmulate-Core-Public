@@ -1,0 +1,16 @@
+name: H9
+key: H9
+default: 0
+unit: Seconds
+values:
+  - type: IntRange
+    min: -2147483648
+    max: 2147483647
+
+# description section for GUI
+detailed_description: "Number of seconds since last full charge"
+
+custom_gui_elements:
+  - type: range
+    min: -2147483648
+    max: 2147483647

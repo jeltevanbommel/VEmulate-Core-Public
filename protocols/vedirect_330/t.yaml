@@ -1,0 +1,17 @@
+name: Battery temperature
+key: T
+unit: °C
+default: '---'
+values:
+  - type: SelectRandom
+    values:
+      - type: StringFixed
+        value: '---'
+        amount: 1
+      - type: IntRange
+        min: 0
+        max: 100
+        amount: 10
+
+
+detailed_description: "When no temperature sensor is connected, '---' will be sent instead of a value. Only on BMV 700"

@@ -1,0 +1,10 @@
+name: Relay minimum enabled time
+key: 0x100A
+default: 0
+unit: minutes
+writable: true
+values:
+  - type: IntRange
+    bits: 16
+    min: 0x0000
+    max: 0xFFFF

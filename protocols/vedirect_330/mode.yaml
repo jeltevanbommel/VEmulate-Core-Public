@@ -1,0 +1,12 @@
+name: Device mode
+key: MODE
+default: 2
+values:
+  - type: Mapping
+    dict: { 'VE_REG_MODE_INVERTER': 2, 'VE_REG_MODE_OFF': 4, 'VE_REG_MODE_ECO': 5 }
+
+detailed_description: "Device mode"
+
+custom_gui_elements:
+  - type: dropdown
+    values: { 'VE_REG_MODE_INVERTER': 2, 'VE_REG_MODE_OFF': 4, 'VE_REG_MODE_ECO': 5 }

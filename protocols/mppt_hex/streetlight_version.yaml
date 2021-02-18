@@ -1,0 +1,8 @@
+name: Streetlight version # TODO Possible values?
+key: 0xEDCC
+default: 0
+values:
+  - type: IntRange
+    bits: 8
+    min: 0x00
+    max: 0xFF

@@ -1,0 +1,10 @@
+name: Panel power
+key: 0xEDBC
+default: 0
+scale: 0.01
+unit: W
+values:
+  - type: IntRange
+    bits: 32
+    min: 0x00000000
+    max: 0xFFFFFFFF

@@ -1,0 +1,9 @@
+name: Load AES timer
+key: 0xED90
+default: 0
+unit: minutes
+values:
+  - type: IntRange
+    bits: 16
+    min: 0x0000
+    max: 0xFFFF

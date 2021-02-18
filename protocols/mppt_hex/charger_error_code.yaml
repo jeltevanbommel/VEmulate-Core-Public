@@ -1,0 +1,7 @@
+name: Charger error code
+key: 0xEDDA
+default: 0
+values:
+  - type: IntChoice
+    bits: 8
+    choices: [0,2,17,18,19,20,21,26,28,33,34,38,39,66,67,68,116,117,119]
